@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/activity_title"
+        android:text="添加黑名单" />
+
+    <EditText
+        android:id="@+id/et_black_number"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:hint="请输入号码"
+        android:inputType="number" />
+
+    <RadioGroup
+        android:id="@+id/rg_mode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:text="选择拦截模式:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RadioButton
+            android:id="@+id/rb_mode_sms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="短信拦截" />
+
+        <RadioButton
+            android:id="@+id/rb_mode_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="电话拦截" />
+
+        <RadioButton
+            android:id="@+id/rb_mode_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="短信电话拦截" />
+
+    </RadioGroup>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_black_number_confirm"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/btn_selector"
+            android:text="添加" />
+
+        <Button
+            android:id="@+id/btn_black_number_cancel"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/btn_selector"
+            android:text="取消" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

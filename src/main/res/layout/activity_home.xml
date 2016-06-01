@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.HomeActivity">
+
+    <TextView
+        style="@style/activity_title"
+        android:text="@string/home_title" />
+
+
+    <io.github.ningwy.views.FocusedTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:text="手机卫士有新版了，快来下载，下载送大礼包
+        手机卫士有新版了，快来下载，下载送大礼包
+        手机卫士有新版了，快来下载，下载送大礼包" />
+
+    <GridView
+        android:id="@+id/gv_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:numColumns="3"
+        android:verticalSpacing="15dp" />
+
+    <!--<Button-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:onClick="add"-->
+        <!--android:text="添加黑名单数据库" />-->
+
+</LinearLayout>

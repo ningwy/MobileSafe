@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">手机卫士</string>
+    <string name="icon_desc">手机卫士icon</string>
+    <string name="home_title">功能列表</string>
+    <string name="setting_title">设置中心</string>
+    <string name="sample_device_admin">设备管理员</string>
+    <string name="sample_device_admin_description">开启设备管理员权限才能进行锁屏</string>
+</resources>

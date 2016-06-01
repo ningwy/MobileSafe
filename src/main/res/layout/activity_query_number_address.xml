@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="io.github.ningwy.activities.QueryNumberAddressActivity">
+
+    <TextView
+        style="@style/activity_title"
+        android:text="号码归属地查询" />
+
+    <EditText
+        android:id="@+id/et_query_number"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="请输入要查询的号码"
+        android:inputType="number" />
+
+    <Button
+        android:textSize="25sp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:onClick="queryAddress"
+        android:text="查询" />
+
+    <TextView
+        android:id="@+id/tv_query_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="查询结果"
+        android:textSize="25sp" />
+
+</LinearLayout>

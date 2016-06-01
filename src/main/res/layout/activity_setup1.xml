@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="io.github.ningwy.activities.Setup1Activity">
+
+    <TextView
+        style="@style/activity_title"
+        android:text="1.欢迎使用手机卫士" />
+
+    <TextView
+        style="@style/lost_find_setup_text"
+        android:text="您的手机防盗卫士:" />
+
+    <TextView
+        style="@style/lost_find_setup_text"
+        android:drawableLeft="@android:drawable/star_big_on"
+        android:text="sim卡变更报警" />
+
+    <TextView
+        style="@style/lost_find_setup_text"
+        android:drawableLeft="@android:drawable/star_big_on"
+        android:text="GPS追踪报警" />
+
+    <TextView
+        style="@style/lost_find_setup_text"
+        android:drawableLeft="@android:drawable/star_big_on"
+        android:text="远程数据销毁" />
+
+    <TextView
+        style="@style/lost_find_setup_text"
+        android:drawableLeft="@android:drawable/star_big_on"
+        android:text="远程锁屏" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/presence_online" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/presence_invisible" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/presence_invisible" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/presence_invisible" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/setup1" />
+
+        <Button
+            style="@style/lost_find_setup_btn_next" />
+
+    </RelativeLayout>
+
+</LinearLayout>
